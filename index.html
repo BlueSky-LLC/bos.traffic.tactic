@@ -496,6 +496,11 @@
             }
         }
 
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            25%, 75% { opacity: 0.3; }
+        }
+
         .fade-in {
             opacity: 0;
             animation: fadeInUp 0.8s ease-out forwards;
@@ -667,7 +672,7 @@
             <div class="phase-card">
                 <div class="phase-number">1</div>
                 <h3>Foundation & Intelligence</h3>
-                <p class="phase-budget">Budget: $35,000 | Weeks 1-2</p>
+                <p class="phase-budget">Budget: $<del style="color: red; text-decoration: line-through;">35,000</del> | Weeks 1-2 | <strong style="color: green; font-weight: bold; animation: blink 1s infinite;">FREE</strong></p>
                 <ul>
                     <li>Complete technical SEO audit (47-point scorecard)</li>
                     <li>Competitive battlefield mapping</li>
